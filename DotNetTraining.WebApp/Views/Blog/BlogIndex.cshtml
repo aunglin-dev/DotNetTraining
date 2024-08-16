@@ -1,0 +1,22 @@
+﻿@model BlogListResponseModel
+<table>
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Title</th>
+            <th>Author</th>
+            <th>Content</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.Blogs)
+        {
+            <tr>
+                <td>@item.Id</td>
+                <td>@item.Title</td>
+                <td>@item.Author</td>
+                <td>@item.Content</td>
+            </tr>
+        }
+    </tbody>
+</table>
